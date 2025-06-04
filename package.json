@@ -1,0 +1,5 @@
+{
+  "name": "yieldscope-monorepo",
+  "private": true,
+  "workspaces": ["next-app"]
+}

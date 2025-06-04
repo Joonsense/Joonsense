@@ -1,0 +1,41 @@
+{
+  "name": "Yield ETL",
+  "nodes": [
+    {
+      "parameters": {
+        "functionCode": "// fetch data from APIs and format JSON"
+      },
+      "name": "Fetch APIs",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "operation": "upsert",
+        "table": "yields",
+        "schema": "public"
+      },
+      "name": "Supabase",
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [540, 300]
+    }
+  ],
+  "connections": {
+    "Fetch APIs": {
+      "main": [
+        [
+          {
+            "node": "Supabase",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "id": "1"
+}
