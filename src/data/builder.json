@@ -1,0 +1,30 @@
+[
+  {
+    "code": "alpha",
+    "owner": "BuilderOne",
+    "members": 128,
+    "volume24h": 1560000,
+    "estRewards": 3250
+  },
+  {
+    "code": "nova",
+    "owner": "NovaTeam",
+    "members": 86,
+    "volume24h": 2435000,
+    "estRewards": 4875
+  },
+  {
+    "code": "zenith",
+    "owner": "ZenithLabs",
+    "members": 64,
+    "volume24h": 875000,
+    "estRewards": 1940
+  },
+  {
+    "code": "delta",
+    "owner": "DeltaDAO",
+    "members": 142,
+    "volume24h": 3200000,
+    "estRewards": 5290
+  }
+]
