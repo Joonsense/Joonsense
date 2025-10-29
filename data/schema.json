@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "UnifiedPredictionMarket",
+  "type": "object",
+  "required": [
+    "platform",
+    "market_id",
+    "question",
+    "category",
+    "outcomes",
+    "yes_price",
+    "no_price",
+    "liquidity",
+    "volume_24h",
+    "end_date",
+    "url",
+    "last_update"
+  ],
+  "properties": {
+    "platform": { "type": "string" },
+    "market_id": { "type": "string" },
+    "question": { "type": "string" },
+    "category": { "type": ["string", "null"] },
+    "outcomes": { "type": "array", "items": { "type": "string" } },
+    "yes_price": { "type": ["number", "null"] },
+    "no_price": { "type": ["number", "null"] },
+    "liquidity": { "type": ["number", "null"] },
+    "volume_24h": { "type": ["number", "null"] },
+    "end_date": { "type": ["string", "null"], "format": "date-time" },
+    "url": { "type": "string", "format": "uri" },
+    "last_update": { "type": "string", "format": "date-time" }
+  }
+}
