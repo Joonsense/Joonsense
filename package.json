@@ -1,0 +1,20 @@
+{
+  "name": "prediction-market-aggregator",
+  "version": "1.0.0",
+  "description": "Aggregator that merges Polymarket, Kalshi, and Manifold Markets data into a unified schema.",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "axios": "^1.6.8",
+    "console-table-printer": "^2.12.1",
+    "dotenv": "^16.4.5",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  }
+}
